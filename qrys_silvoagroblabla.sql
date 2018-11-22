@@ -81,6 +81,7 @@ join ac_iica ac
 on a.clave = ac.clave;
 
 -- Organización entre unidades de producción 
+create table organizacion_prodcuctores as
 select ac.geom, a.*
 from
 (select a.clave, a.p1280901, a.p1280903, a.p1281001, 
